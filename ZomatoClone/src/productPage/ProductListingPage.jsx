@@ -2,8 +2,6 @@ import Navbar from "../components/Navbar";
 import { Outlet } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ThreeChoices from "./ThreeChoices";
-import { useState } from "react";
-import Modal from "../UI/Modal";
 const ProductListingPage = () => {
   return (
     <>
