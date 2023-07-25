@@ -4,6 +4,8 @@ import ErrorPage from './error-page';
 import Filterthree from './productPage/Filterthree';
 import ProductListingPage from './productPage/ProductListingPage';
 import Modal from './UI/Modal';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import {
   createBrowserRouter,
   RouterProvider,
