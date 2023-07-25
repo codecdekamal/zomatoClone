@@ -1,8 +1,18 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import Filter from "../UI/filter";
 import FilterSvg from "../../public/FilterSvg";
+import { useOutletContext } from "react-router";
 const Filterthree = () => {
-  console.log(FilterSvg)
+  const [showModal,setShowModal] = useOutletContext()
+  const onClickeventHandler = ()=>{
+    setShowModal(true)
+    if(showModal===true){
+      setShowModal(false)
+    }
+    else{
+      return
+    }
+  }
    return (
      <>
        <div
@@ -11,7 +21,7 @@ const Filterthree = () => {
        >
          {FilterSvg.map((item) => {
            return (
-             <div className="mx-4 border border-primary-subtle p-1 rounded">
+             <div onClick={onClickeventHandler} className="mx-4 border border-primary-subtle p-1 rounded">
                <Filter name={item.name} svg={item.svg} />
              </div>
            );
