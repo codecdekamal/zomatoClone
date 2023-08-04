@@ -4,7 +4,7 @@ const ThreeChoices = () => {
   return (
     <>
               <div className="row gap-4">
-                <Link to="Delivery" className="col  rounded-4 text-decoration-none  ">
+                <Link  className="col-sm-1  rounded-4 text-decoration-none  ">
                   <div className="icon col justify-center">
                     <div>
                       <img
@@ -14,11 +14,11 @@ const ThreeChoices = () => {
                       />
                     </div>
                     <div className="col">
-                      <p className="font-semibold">Order Online</p>
+                      <p className="font-serif ">Order Online</p>
                     </div>
                   </div>
                 </Link>
-                <Link className="col border-0 rounded-4 text-decoration-none ">
+                <Link className="col-sm-1  border-0 rounded-4 text-decoration-none ">
                   <div className="icon">
                     <img
                       height="50"
@@ -28,7 +28,7 @@ const ThreeChoices = () => {
                   </div>
                   <div className="nameOfIcon">Dinning</div>
                 </Link>
-                <Link className="col border-0 rounded-4 text-decoration-none ">
+                <Link className="col-sm-1 border-0 rounded-4 text-decoration-none ">
                   <div className="icon">
                     <img
                       height="50"
